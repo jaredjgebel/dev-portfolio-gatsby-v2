@@ -11,7 +11,6 @@ const Title = styled.h6`
 
 const HeaderBackground = styled.div`
   background-color: #17242d;
-  margin-bottom: 1.45rem;
 `
 
 const LinkSpacing = styled.div`
