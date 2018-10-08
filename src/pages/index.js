@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import { Container, Row, Column } from 'react-rasta'
 import Layout from '../components/layout'
 
 const IndexPage = () => (

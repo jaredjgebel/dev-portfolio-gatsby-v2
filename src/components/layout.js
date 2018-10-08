@@ -2,9 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import { Container, Row, Column } from 'react-rasta'
 
 import Header from './header'
-import './layout.css'
+// import './layout.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -22,23 +23,42 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            {
+              name: 'description',
+              content: 'Software Developer Portfolio for Jared Gebel',
+            },
+            {
+              name: 'keywords',
+              content: 'software, development, full-stack, javascript',
+            },
           ]}
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
+        <Container 
+          fullscreen="true"
+          style={{padding: '0rem 0rem',}}
         >
-          {children}
-        </div>
+          <Row >
+            <Column>
+              <Container 
+                fluid="true"
+                style={{padding: '0rem 0rem',}}
+              >
+                <Row>
+                  <Column>
+                    <Header siteTitle={data.site.siteMetadata.title} />
+                  </Column>
+                </Row>
+              </Container>
+            </Column>
+          </Row>
+          <Row>
+            <Column>
+              {children}
+            </Column>
+          </Row>
+        </Container>
       </>
     )}
   />
