@@ -2,9 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import { Container, Row, Column } from 'react-rasta'
+import { Container, Row, Col } from 'styled-bootstrap-grid'
 
 import Header from './header'
+import { injectLayoutBaseCSS } from 'styled-bootstrap-grid'
+
+injectLayoutBaseCSS()
 // import './layout.css'
 
 const Layout = ({ children }) => (
@@ -35,28 +38,17 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Container 
-          fullscreen="true"
-          style={{padding: '0rem 0rem',}}
+        <Container
+          fluid={true}
+          style={{ paddingLeft: '0px', paddingRight: '0px' }}
         >
-          <Row >
-            <Column>
-              <Container 
-                fluid="true"
-                style={{padding: '0rem 0rem',}}
-              >
-                <Row>
-                  <Column>
-                    <Header siteTitle={data.site.siteMetadata.title} />
-                  </Column>
-                </Row>
-              </Container>
-            </Column>
+          <Row>
+            <Col>
+              <Header />
+            </Col>
           </Row>
           <Row>
-            <Column>
-              {children}
-            </Column>
+            <Col>{children}</Col>
           </Row>
         </Container>
       </>

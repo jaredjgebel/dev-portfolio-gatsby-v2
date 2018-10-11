@@ -1,64 +1,60 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { Container, Row, Column } from 'react-rasta'
+import { Container, Row, Col } from 'styled-bootstrap-grid'
 import NavLink from '../components/NavLink'
 
-const Title = styled.h6`
-  margin: 0 auto;
-  padding: 0.75rem 0rem;
-`
-
-const HeaderBackground = styled.div`
+const HeaderRow = styled(Row)`
+  min-height: 2rem;
   background-color: #17242d;
 `
 
-const LinkSpacing = styled.div`
-  display: flex;
+const Title = styled(Link)`
+  color: whitesmoke;
+  text-decoration: none;
   height: 100%;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  :hover {
+    color: whitesmoke;
+  }
 `
 
-const Header = ({ siteTitle }) => (
-    <HeaderBackground>
-      <Container fluid="true">
-        <Row>
-            <Column size={{ xs: 12, sm: 7 }}>
-              <Title>
-                <Link
-                    to="/"
-                    style={{
-                      color: 'whitesmoke',
-                      textDecoration: 'none',
-                    }}
-                  >
-                    {siteTitle}
-                  </Link>
-              </Title>
-            </Column>
+const FlexCol = styled(Col)`
+  display: flex;
+  flex-direction: ${props => (props.direction === 'row' ? 'row' : 'column')};
+`
 
-            <Column size={{ xs: 12, sm: 5 }} justifyContent={{ xs: "center", sm: "flex-end"}}>
-                <LinkSpacing>
-                  <NavLink
-                    name="About"
-                    href="/"
-                  />
-                  <NavLink
-                      name="Projects"
-                      href="/"
-                    />
-                  <NavLink
-                    name="Contact"
-                    href="/"
-                  />
-                </LinkSpacing>
-            </Column>
+const Header = () => (
+  <Container fluid={true}>
+    <HeaderRow>
+      <FlexCol col={12} sm={7} direction="row">
+        <Row
+          justifyContent="center"
+          smJustifyContent="start"
+          alignItems="center"
+          style={{ width: '100%' }}
+        >
+          <Col style={{ width: 'auto' }}>
+            <Title to="/">Jared Gebel</Title>
+          </Col>
+        </Row>
+      </FlexCol>
 
-          </Row>
-        </Container>
-      </HeaderBackground>
+      <FlexCol col={12} sm={5} direction="row">
+        <Row
+          justifyContent="center"
+          smJustifyContent="end"
+          alignItems="center"
+          style={{ width: '100%' }}
+        >
+          <Col style={{ width: 'auto' }}>
+            <NavLink name="About" href="/" />
+            <NavLink name="Projects" href="/" />
+            <NavLink name="Contact" href="/" />
+          </Col>
+        </Row>
+      </FlexCol>
+    </HeaderRow>
+  </Container>
 )
 
 export default Header
