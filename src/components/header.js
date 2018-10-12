@@ -21,6 +21,7 @@ const Title = styled(Link)`
 const FlexCol = styled(Col)`
   display: flex;
   flex-direction: ${props => (props.direction === 'row' ? 'row' : 'column')};
+  padding-right: 0px;
 `
 
 const Header = () => (
@@ -46,7 +47,7 @@ const Header = () => (
           alignItems="center"
           style={{ width: '100%' }}
         >
-          <Col style={{ width: 'auto' }}>
+          <Col style={{ width: 'auto', paddingRight: '0px' }}>
             <NavLink name="About" href="/" />
             <NavLink name="Projects" href="/" />
             <NavLink name="Contact" href="/" />
