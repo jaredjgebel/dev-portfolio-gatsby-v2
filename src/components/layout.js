@@ -3,12 +3,11 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import { Container, Row, Col } from 'styled-bootstrap-grid'
-
 import Header from './header'
 import { injectLayoutBaseCSS } from 'styled-bootstrap-grid'
 
+// injection for styled bootstrap grid
 injectLayoutBaseCSS()
-// import './layout.css'
 
 const Layout = ({ children }) => (
   <StaticQuery

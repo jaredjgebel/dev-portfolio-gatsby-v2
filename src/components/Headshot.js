@@ -1,13 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'styled-bootstrap-grid'
+import { Row } from 'styled-bootstrap-grid'
 import headshot from '../images/headshot.png'
-
-const FlexCol = styled(Col)`
-  display: flex;
-  flex-direction: ${props => (props.direction === 'row' ? 'row' : 'column')};
-  padding-right: 0px;
-`
+import { FlexCol } from './styles/flex'
 
 const Headshot = () => (
   <Row justifyContent="center">
