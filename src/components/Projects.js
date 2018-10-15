@@ -13,7 +13,7 @@ const Projects = () => (
   <ProjectsBackground justifyContent="center">
     <FlexCol col={8}>
       <Row justifyContent="center" style={{ paddingTop: '75px' }}>
-        <h3>Projects</h3>
+        <h3 id="projects">Projects</h3>
       </Row>
       <Row justifyContent="center">
         <ProjectTable />

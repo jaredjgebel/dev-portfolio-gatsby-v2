@@ -6,7 +6,7 @@ const JavaScript = () => (
   <Row
     justifyContent="center"
     style={{
-      minHeight: '28rem',
+      minHeight: '20rem',
       backgroundColor: 'whitesmoke',
     }}
   >

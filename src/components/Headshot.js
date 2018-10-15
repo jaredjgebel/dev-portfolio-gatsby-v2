@@ -8,6 +8,7 @@ const Headshot = () => (
     <FlexCol col={8}>
       <Row justifyContent="center" style={{ paddingTop: '75px' }}>
         <img
+          id="about"
           src={headshot}
           alt="Jared's headshot"
           style={{

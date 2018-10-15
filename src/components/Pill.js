@@ -1,5 +1,4 @@
 import React from 'react'
-import { Col, Row } from 'styled-bootstrap-grid'
 import { FlexCol } from './styles/flex'
 import styled from 'styled-components'
 

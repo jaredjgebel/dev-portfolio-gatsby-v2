@@ -1,14 +1,13 @@
 import React from 'react'
-import { Col, Row } from 'styled-bootstrap-grid'
 import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
-import { FlexCol } from './styles/flex'
 import PillContainer from './PillContainer'
 
 const TableBorder = styled.div`
   width: 100%;
-  border: solid 2px blue;
+  border: solid 2px #17242d;
   border-radius: 10px;
+  min-height: 15rem;
 `
 
 const ProjectTable = () => (

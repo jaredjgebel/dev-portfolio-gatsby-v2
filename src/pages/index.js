@@ -9,10 +9,7 @@ import Footer from '../components/Footer'
 
 const IndexPage = () => (
   <Layout>
-    <Hero
-      title="Jared Gebel"
-      subtitle="Full Stack Software Developer, JavaScript"
-    />
+    <Hero title="Jared Gebel" subtitle="Full Stack Web Developer, JavaScript" />
     <Profile />
     <JavaScript />
     <Projects />
