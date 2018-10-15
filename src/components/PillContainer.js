@@ -14,7 +14,7 @@ class PillContainer extends Component {
     let stateObj = {}
 
     edges.forEach((edge, i) => {
-      stateObj[edge.node.title] = i === 0 ? 'active' : 'inactive'
+      stateObj[edge.node.title] = i === 0
     })
 
     this.state = stateObj
@@ -24,14 +24,13 @@ class PillContainer extends Component {
   onClick = e => {
     const target = e.target.innerHTML
 
-    //   Object.keys(this.state).forEach(title => {
-    //     if (title === true) {
-    //       this.setState({ [title]: false })
-    //     }
-    //   })
-    //   if (this.state[target]) {
-    //     this.setState({ [target]: true })
-    //   }
+    Object.keys(this.state).forEach(title => {
+      if (this.state[title]) {
+        this.setState({ [title]: false })
+      }
+    })
+
+    this.setState({ [target]: true })
   }
 
   render() {
@@ -49,7 +48,7 @@ class PillContainer extends Component {
     const Articles = edges.map((edge, i) => (
       <Article
         text={edge.node.article}
-        visible={this.state[edge.node.title]}
+        visible={!this.state[edge.node.title]}
         key={i}
       />
     ))
