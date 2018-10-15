@@ -8,6 +8,7 @@ const TableBorder = styled.div`
   border: solid 2px #17242d;
   border-radius: 10px;
   min-height: 15rem;
+  padding: 0.5rem;
 `
 
 const ProjectTable = () => (
@@ -19,6 +20,12 @@ const ProjectTable = () => (
             node {
               title
               article
+              technologies {
+                name
+                link
+              }
+              github
+              projectHighlights
             }
           }
         }

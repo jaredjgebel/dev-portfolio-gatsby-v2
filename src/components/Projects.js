@@ -7,6 +7,7 @@ import ProjectTable from './ProjectTable'
 const ProjectsBackground = styled(Row)`
   min-height: 28rem;
   background-color: whitesmoke;
+  padding-bottom: 30px;
 `
 
 const Projects = () => (

@@ -1,10 +1,49 @@
 [
   {
     "title": "'Djello' Project Management",
-    "article": "For this project, I did a bunch of stuff"
+    "article": "Task manager for teams. Allows for assignment of team members to tasks, groups similar tasks together into boards and lists, and automatically tracks the history of each task.",
+    "technologies": [
+      { "name": "PostgreSQL", "link": "https://www.postgresql.org/" },
+      {
+        "name": "Express",
+        "link": "https://expressjs.com/"
+      },
+      { "name": "React", "link": "https://reactjs.org/" },
+      { "name": "Redux", "link": "https://redux.js.org/" },
+      { "name": "Webpack", "link": "https://webpack.js.org/" },
+      { "name": "Babel", "link": "https://babeljs.io/" },
+      { "name": "Auth0", "link": "https://auth0.com/" },
+      { "name": "Sequelize.js", "link": "http://docs.sequelizejs.com/" },
+      { "name": "Jasmine", "link": "https://jasmine.github.io/" },
+      { "name": "Heroku", "link": "https://www.heroku.com/" }
+    ],
+    "github": "https://github.com/jaredjgebel/project_djello",
+    "projectHighlights": [
+      "Created and managed database environment, including models, seeders, and migrations, with PostgreSQL and Sequelize.js",
+      "Built Express.js REST API to serve application data from server",
+      "Composed reusable components in React for the creation of dynamic views",
+      "Used Redux to interact with API and manage application state, using best practices to ensure data immutability",
+      "Built with Webpack, using Babel to integrate ES6 and ES7 features",
+      "Authenticated application and API by integrating Auth0 service",
+      "Thorough testing of API and database methods with Jasmine",
+      "Deployed with Heroku"
+    ]
   },
   {
     "title": "Find Your Representative",
-    "article": "For this project, I did EVEN MORE STUFF"
+    "article": "Allows a user to find information about their Congressional representatives by inputting their address. Includes contact information, social media, and recent vote history.",
+    "technologies": [
+      {
+        "name": "Express",
+        "link": "https://expressjs.com/"
+      },
+      { "name": "Handlebars.js", "link": "https://handlebarsjs.com" },
+      { "name": "Bootstrap", "link": "https://getbootstrap.com//" }
+    ],
+    "github": "https://github.com/jaredjgebel/project_what_have_you_done",
+    "projectHighlights": [
+      "Integrated information from three external APIs: Google Civics, US Github, and Propublica",
+      "Used API response information to make control flow decisions"
+    ]
   }
 ]

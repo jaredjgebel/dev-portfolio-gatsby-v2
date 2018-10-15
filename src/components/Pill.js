@@ -3,7 +3,7 @@ import { FlexCol } from './styles/flex'
 import styled from 'styled-components'
 
 const StyledButton = styled.button`
-  background: ${props => (props.active ? 'lightblue' : 'white')};
+  background: ${props => (props.active ? '#608699' : 'white')};
   border-radius: '10px 10px';
   margin-top: '20px';
 `
