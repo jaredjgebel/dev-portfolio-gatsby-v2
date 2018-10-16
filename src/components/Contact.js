@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Row } from 'styled-bootstrap-grid'
 import { FlexCol } from './styles/flex'
-import githubMark from '../images/Github-Mark-Light-64px.png'
+import githubMark from '../pages/Github-Mark-64px.png'
 
 const ContactBackground = styled(Row)`
   min-height: 18rem;

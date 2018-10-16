@@ -1,6 +1,6 @@
 import React from 'react'
 import { FlexCol } from './styles/flex'
-import githubMarkDark from '../images/Github-Mark-64px.png'
+import githubMarkDark from '../pages/Github-Mark-64px.png'
 
 const Article = ({
   text,

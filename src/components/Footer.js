@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import gatsby from '../images/gatsby-icon.png'
+import gatsby from '../pages/gatsby-icon.png'
 
 const FooterBackground = styled.footer`
   height: 2rem;
