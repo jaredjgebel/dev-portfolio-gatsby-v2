@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row } from 'styled-bootstrap-grid'
-import headshot from '../pages/headshot.png'
+import headshot from '../images/headshot.png'
 import { FlexCol } from './styles/flex'
 
 const Headshot = () => (
