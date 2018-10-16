@@ -1,7 +1,8 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+import Shell from 'child_process'
 
-// You can delete this file if you're not using it
+function postBuild(pages, callback) {
+  Shell.execSync('cp -r src/images/* public/')
+  callback()
+}
+
+export { postBuild }
