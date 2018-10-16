@@ -1,8 +1,8 @@
-import Shell from 'child_process'
+const Shell = require('child_process')
 
 function postBuild(pages, callback) {
   Shell.execSync('cp -r src/images/* public/')
   callback()
 }
 
-export { postBuild }
+module.exports = { postBuild }
