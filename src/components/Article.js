@@ -1,6 +1,6 @@
 import React from 'react'
 import { FlexCol } from './styles/flex'
-import githubMarkDark from '../../static/Github-Mark-64px.png'
+// import githubMarkDark from '../../static/Github-Mark-64px.png'
 
 const Article = ({
   text,
@@ -34,7 +34,7 @@ const Article = ({
     </FlexCol>
     <FlexCol>
       <a href={github} style={{ textAlign: 'center' }}>
-        <img src={githubMarkDark} alt="Project Repository" />
+        Project Repository
       </a>
     </FlexCol>
   </div>

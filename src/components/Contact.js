@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Row } from 'styled-bootstrap-grid'
 import { FlexCol } from './styles/flex'
-import githubMark from '../../static/Github-Mark-Light-64px.png'
+// import githubMark from '../../static/Github-Mark-Light-64px.png'
 
 const ContactBackground = styled(Row)`
   min-height: 18rem;
@@ -39,14 +39,10 @@ const Contact = () => (
           </a>
         </FlexCol>
         <FlexCol col={6}>
-          <h5 style={{ alignSelf: 'center', paddingTop: '25px' }}>
-            My Github Profile
-          </h5>
-          <a
-            href="https://github.com/jaredjgebel"
-            style={{ alignSelf: 'center' }}
-          >
-            <img src={githubMark} alt="Github Profile" />
+          <a href="https://github.com/jaredjgebel">
+            <h5 style={{ alignSelf: 'center', paddingTop: '25px' }}>
+              My Github Profile
+            </h5>
           </a>
         </FlexCol>
       </Row>
