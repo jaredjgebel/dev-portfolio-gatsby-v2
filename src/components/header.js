@@ -45,6 +45,7 @@ const Header = () => (
           style={{ width: '100%' }}
         >
           <Col style={{ width: 'auto', paddingRight: '0px' }}>
+            <NavLink name="Blog" href="/blog/" />
             <NavLink name="About" href="#about" />
             <NavLink name="Projects" href="#projects" />
             <NavLink name="Contact" href="#contact" />

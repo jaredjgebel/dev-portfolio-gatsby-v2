@@ -16,7 +16,6 @@ const Footer = () => (
         style={{
           marginBottom: '0px',
           paddingLeft: '10px',
-          fontSize: '16spx',
         }}
       >
         Site created with{' '}

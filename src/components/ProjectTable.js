@@ -18,6 +18,7 @@ const ProjectTable = () => (
         allJson {
           edges {
             node {
+              id
               title
               article
               technologies {

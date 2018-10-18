@@ -5,7 +5,6 @@ import Profile from '../components/Profile'
 import JavaScript from '../components/JavaScript'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
-import Footer from '../components/Footer'
 
 const IndexPage = () => (
   <Layout>
@@ -14,7 +13,6 @@ const IndexPage = () => (
     <JavaScript />
     <Projects />
     <Contact />
-    <Footer />
   </Layout>
 )
 

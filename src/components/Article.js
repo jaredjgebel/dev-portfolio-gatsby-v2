@@ -25,7 +25,7 @@ const Article = ({
       <h5>Technologies</h5>
       <p>
         {technologies.map((technology, i) => (
-          <a href={technology.link} style={{ textDecoration: 'none' }}>
+          <a href={technology.link} style={{ textDecoration: 'none' }} key={i}>
             {technology.name}
             {i === technologies.length - 1 ? '' : ', '}
           </a>

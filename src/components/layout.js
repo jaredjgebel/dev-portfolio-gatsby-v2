@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import { Container, Row, Col } from 'styled-bootstrap-grid'
-import Header from './header'
 import { injectLayoutBaseCSS } from 'styled-bootstrap-grid'
+import Header from './header'
+import Footer from '../components/Footer'
 
 // injection for styled bootstrap grid
 injectLayoutBaseCSS()
@@ -39,7 +40,13 @@ const Layout = ({ children }) => (
         </Helmet>
         <Container
           fluid={true}
-          style={{ paddingLeft: '0px', paddingRight: '0px' }}
+          style={{
+            paddingLeft: '0px',
+            paddingRight: '0px',
+            // paddingBottom: '2.5rem',
+            minHeight: 'calc(100vh - 25px)',
+            position: 'relative',
+          }}
         >
           <Row>
             <Col>
@@ -49,6 +56,17 @@ const Layout = ({ children }) => (
           <Row>
             <Col>{children}</Col>
           </Row>
+          <div
+            style={{
+              position: 'absolute',
+              bottom: '0',
+              width: '100%',
+              paddingLeft: '0px',
+              paddingRight: '0px',
+            }}
+          >
+            <Footer />
+          </div>
         </Container>
       </>
     )}
