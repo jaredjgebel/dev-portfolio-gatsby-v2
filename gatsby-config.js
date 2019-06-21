@@ -37,11 +37,12 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-transformer-json`,
-      options: {
-        typeName: `Json`, // a fixed string
-      },
-    },
+    `gatsby-transformer-json`,
+    // {
+    //   resolve: `gatsby-transformer-json`,
+    //   options: {
+    //     typeName: `Json`, // a fixed string
+    //   },
+    // },
   ],
 }

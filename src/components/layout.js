@@ -2,13 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import { Container, Row, Col } from 'styled-bootstrap-grid'
-import { injectLayoutBaseCSS } from 'styled-bootstrap-grid'
+import { Container, Row, Col, BaseCSS } from 'styled-bootstrap-grid'
 import Header from './header'
 import Footer from '../components/Footer'
-
-// injection for styled bootstrap grid
-injectLayoutBaseCSS()
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -23,6 +19,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+        <BaseCSS />
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[

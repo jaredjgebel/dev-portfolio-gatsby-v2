@@ -14,8 +14,7 @@
       { "name": "Babel", "link": "https://babeljs.io/" },
       { "name": "Auth0", "link": "https://auth0.com/" },
       { "name": "Sequelize.js", "link": "http://docs.sequelizejs.com/" },
-      { "name": "Jasmine", "link": "https://jasmine.github.io/" },
-      { "name": "Heroku", "link": "https://www.heroku.com/" }
+      { "name": "Jasmine", "link": "https://jasmine.github.io/" }
     ],
     "github": "https://github.com/jaredjgebel/project_djello",
     "projectHighlights": [
@@ -25,8 +24,36 @@
       "Used Redux to interact with API and manage application state, using best practices to ensure data immutability",
       "Built with Webpack, using Babel to integrate ES6 and ES7 features",
       "Authenticated application and API by integrating Auth0 service",
-      "Thorough testing of API and database methods with Jasmine",
-      "Deployed with Heroku"
+      "Thorough testing of API and database methods with Jasmine"
+    ]
+  },
+  {
+    "title": "Art Slide Puzzles",
+    "article": "A slide puzzle application, using React to display puzzle pieces as a given set of UI state.",
+    "technologies": [
+      { "name": "React", "link": "https://reactjs.org/" },
+      { "name": "Lodash", "link": "https://lodash.com/" },
+      { "name": "Jest", "link": "https://jestjs.io/" }
+    ],
+    "github": "https://github.com/jaredjgebel/art-slide-puzzle",
+    "projectHighlights": [
+      "Created a coordinate system and methods for manipulating said coordinates by using 2D arrays to generate each given puzzle view",
+      "Utilized React’s Context API to persist state for puzzle and coordinates",
+      "Possible to extend app to create slide puzzles from any image"
+    ]
+  },
+  {
+    "title": "Practice Jeopardy!",
+    "article": "A React app to practice questions from the game show Jeopardy!",
+    "technologies": [
+      { "name": "React", "link": "https://reactjs.org/" },
+      { "name": "Feather Icons", "link": "https://feathericons.com/" }
+    ],
+    "github": "https://github.com/jaredjgebel/practice-jeopardy",
+    "projectHighlights": [
+      "Implemented component, style, and SVG icon libraries for a clear, consistent, and accessible design",
+      "Used Fetch API to gather information from j-Archive API",
+      "Responsive design for app to be used predictably across devices"
     ]
   },
   {
@@ -43,7 +70,7 @@
     "github": "https://github.com/jaredjgebel/project_what_have_you_done",
     "projectHighlights": [
       "Integrated information from three external APIs: Google Civics, US Github, and Propublica",
-      "Used API response information to make control flow decisions"
+      "Parsed API data using Express and utilized Mustache templates to display data for user"
     ]
   }
 ]

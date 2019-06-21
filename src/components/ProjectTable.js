@@ -15,7 +15,7 @@ const ProjectTable = () => (
   <StaticQuery
     query={graphql`
       query {
-        allJson {
+        allProjectJson {
           edges {
             node {
               id
@@ -34,7 +34,7 @@ const ProjectTable = () => (
     `}
     render={data => (
       <TableBorder>
-        <PillContainer edges={data.allJson.edges} />
+        <PillContainer edges={data.allProjectJson.edges} />
       </TableBorder>
     )}
   />
