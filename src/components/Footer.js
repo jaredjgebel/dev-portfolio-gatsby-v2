@@ -1,34 +1,34 @@
-import React from 'react'
-import styled from 'styled-components'
-import gatsby from '../images/gatsby-icon.png'
+import React from "react";
+import styled from "styled-components";
+import gatsby from "../images/gatsby-icon.png";
 
 const FooterBackground = styled.footer`
   height: 2rem;
-  background-color: #17242d;
+  background-color: #0d2620;
   color: whitesmoke;
   display: flex;
-`
+`;
 
 const Footer = () => (
   <FooterBackground>
-    <div style={{ alignSelf: 'center' }}>
+    <div style={{ alignSelf: "center" }}>
       <p
         style={{
-          marginBottom: '0px',
-          paddingLeft: '10px',
+          marginBottom: "0px",
+          paddingLeft: "10px"
         }}
       >
-        Site created with{' '}
+        Site created with{" "}
         <a
           href="https://www.gatsbyjs.org/"
-          style={{ textDecoration: 'none', color: 'whitesmoke' }}
+          style={{ textDecoration: "none", color: "whitesmoke" }}
         >
-          <img src={gatsby} style={{ width: '25px' }} alt="Gatsby.js" />
-        </a>{' '}
+          <img src={gatsby} style={{ width: "25px" }} alt="Gatsby.js" />
+        </a>{" "}
         v2
       </p>
     </div>
   </FooterBackground>
-)
+);
 
-export default Footer
+export default Footer;

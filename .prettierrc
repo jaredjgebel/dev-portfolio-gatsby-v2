@@ -1,5 +1,10 @@
 {
-  "semi": false,
-  "singleQuote": true,
-  "trailingComma": "es5"
-}
+   "overrides": [
+     {
+       "files": "./src/components/Contact",
+       "options": {
+         "rangeStart": 28 
+       }
+     }
+   ]
+ }

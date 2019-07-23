@@ -1,17 +1,18 @@
-import React from 'react'
-import { Row } from 'styled-bootstrap-grid'
-import { FlexCol } from './styles/flex'
+import React from "react";
+import { Row } from "styled-bootstrap-grid";
+import { FlexCol } from "./styles/flex";
 
 const JavaScript = () => (
   <Row
     justifyContent="center"
     style={{
-      minHeight: '20rem',
-      backgroundColor: 'whitesmoke',
+      minHeight: "20rem",
+      backgroundColor: "whitesmoke",
+      margin: "0px"
     }}
   >
     <FlexCol col={8}>
-      <Row justifyContent="center" style={{ paddingTop: '75px' }}>
+      <Row justifyContent="center" style={{ paddingTop: "75px" }}>
         <h3>Why learn JavaScript?</h3>
         <p>
           As someone working in the sphere of web technologies, JavaScript is an
@@ -27,6 +28,6 @@ const JavaScript = () => (
       </Row>
     </FlexCol>
   </Row>
-)
+);
 
-export default JavaScript
+export default JavaScript;

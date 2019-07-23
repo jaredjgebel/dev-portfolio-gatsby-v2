@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-import { Container, Row, Col, BaseCSS } from 'styled-bootstrap-grid'
-import Header from './header'
-import Footer from '../components/Footer'
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { StaticQuery, graphql } from "gatsby";
+import { Container, Row, Col, BaseCSS } from "styled-bootstrap-grid";
+import Header from "./header";
+import Footer from "../components/Footer";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -24,25 +24,24 @@ const Layout = ({ children }) => (
           title={data.site.siteMetadata.title}
           meta={[
             {
-              name: 'description',
-              content: 'Software Developer Portfolio for Jared Gebel',
+              name: "description",
+              content: "Web Developer Portfolio for Jared Gebel"
             },
             {
-              name: 'keywords',
-              content: 'software, development, full-stack, javascript',
-            },
+              name: "keywords",
+              content: "web, software, development, javascript, developer"
+            }
           ]}
         >
           <html lang="en" />
         </Helmet>
         <Container
-          fluid={true}
+          fluid
           style={{
-            paddingLeft: '0px',
-            paddingRight: '0px',
-            // paddingBottom: '2.5rem',
-            minHeight: 'calc(100vh - 25px)',
-            position: 'relative',
+            paddingLeft: "0px",
+            paddingRight: "0px",
+            position: "relative",
+            overflowY: "hidden"
           }}
         >
           <Row>
@@ -55,11 +54,11 @@ const Layout = ({ children }) => (
           </Row>
           <div
             style={{
-              position: 'absolute',
-              bottom: '0',
-              width: '100%',
-              paddingLeft: '0px',
-              paddingRight: '0px',
+              position: "absolute",
+              bottom: "0",
+              width: "100%",
+              paddingLeft: "0px",
+              paddingRight: "0px"
             }}
           >
             <Footer />
@@ -68,10 +67,10 @@ const Layout = ({ children }) => (
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;

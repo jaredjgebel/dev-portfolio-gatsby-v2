@@ -1,15 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import { StaticQuery, graphql } from 'gatsby'
-import PillContainer from './PillContainer'
-
-const TableBorder = styled.div`
-  width: 100%;
-  border: solid 2px #17242d;
-  border-radius: 10px;
-  min-height: 15rem;
-  padding: 0.5rem;
-`
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import PillContainer from "./PillContainer";
 
 const ProjectTable = () => (
   <StaticQuery
@@ -32,12 +23,8 @@ const ProjectTable = () => (
         }
       }
     `}
-    render={data => (
-      <TableBorder>
-        <PillContainer edges={data.allProjectJson.edges} />
-      </TableBorder>
-    )}
+    render={data => <PillContainer edges={data.allProjectJson.edges} />}
   />
-)
+);
 
-export default ProjectTable
+export default ProjectTable;

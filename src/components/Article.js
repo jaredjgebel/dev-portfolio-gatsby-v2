@@ -1,43 +1,54 @@
-import React from 'react'
-import { FlexCol } from './styles/flex'
-// import githubMarkDark from '../../static/Github-Mark-64px.png'
+import React from "react";
+import { Row } from "styled-bootstrap-grid";
+import { FlexCol } from "./styles/flex";
+import githubIcon from "../images/github.png";
 
 const Article = ({
   text,
   technologies,
   github,
   projectHighlights,
-  visible,
+  visible
 }) => (
   <div hidden={visible}>
-    <FlexCol>
-      <article style={{ padding: '0.25rem 1rem 0.25rem 1rem' }}>{text}</article>
-    </FlexCol>
-    <FlexCol>
-      <h5 style={{ paddingTop: '1rem' }}>Project Highlights</h5>
-      <ul>
-        {projectHighlights.map((highlight, i) => (
-          <li key={i}>{highlight}</li>
-        ))}
-      </ul>
-    </FlexCol>
-    <FlexCol>
-      <h5>Technologies</h5>
-      <p>
-        {technologies.map((technology, i) => (
-          <a href={technology.link} style={{ textDecoration: 'none' }} key={i}>
-            {technology.name}
-            {i === technologies.length - 1 ? '' : ', '}
-          </a>
-        ))}
-      </p>
-    </FlexCol>
-    <FlexCol>
-      <a href={github} style={{ textAlign: 'center' }}>
-        Project Repository
-      </a>
-    </FlexCol>
+    <Row style={{ display: "flex", alignItems: "center" }}>
+      <article style={{ padding: "0.25rem 1rem 0.25rem 1rem", height: "8rem" }}>
+        {text}
+      </article>
+    </Row>
+    <Row style={{ display: "flex", justifyContent: "center" }}>
+      <FlexCol col={10}>
+        <ul>
+          {projectHighlights.map((highlight, i) => (
+            <li key={i}>{highlight}</li>
+          ))}
+        </ul>
+      </FlexCol>
+    </Row>
+    <Row>
+      <FlexCol>
+        <a href={github} style={{ textAlign: "center" }}>
+          <img src={githubIcon} alt="Github repository" />
+        </a>
+        <h4>Technologies</h4>
+        <p>
+          {technologies.map((technology, i) => (
+            <a
+              href={technology.link}
+              style={{ textDecoration: "none", color: "black" }}
+              key={i}
+            >
+              {technology.name}
+              {i === technologies.length - 1 ? "" : ", "}
+            </a>
+          ))}
+        </p>
+      </FlexCol>
+    </Row>
+    <Row>
+      <FlexCol></FlexCol>
+    </Row>
   </div>
-)
+);
 
-export default Article
+export default Article;
