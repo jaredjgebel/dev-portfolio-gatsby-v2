@@ -34,8 +34,8 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Container fluid>
-          <Row debug>
+        <Container fluid style={{ padding: "0px" }}>
+          <Row nogutter debug>
             <Col debug>
               <Header />
             </Col>

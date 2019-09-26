@@ -20,12 +20,10 @@ const IndexPage = () => (
         </Col>
       </Row>
       <Row>
-        <Col>
-          <Projects />
-        </Col>
+        <Col>{/* <Projects /> */}</Col>
       </Row>
-      <Row>
-        <Col>
+      <Row debug>
+        <Col debug xs={12}>
           <Contact />
         </Col>
       </Row>
