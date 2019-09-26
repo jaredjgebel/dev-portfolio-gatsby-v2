@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Pill from "./Pill";
-import { Row } from "styled-bootstrap-grid";
-import { FlexCol } from "./styles/flex";
+import { Col, Row } from "react-grid-system";
 import Article from "./Article";
 
 class PillContainer extends Component {
@@ -36,14 +35,12 @@ class PillContainer extends Component {
     const { edges } = this.props;
 
     const Pills = edges.map((edge, i) => (
-      <FlexCol sm={12} md={6}>
-        <Pill
-          active={this.state[edge.node.title]}
-          text={edge.node.title}
-          onClick={this.onClick}
-          key={i}
-        />
-      </FlexCol>
+      <Pill
+        active={this.state[edge.node.title]}
+        text={edge.node.title}
+        onClick={this.onClick}
+        key={i}
+      />
     ));
 
     const Articles = edges.map((edge, i) => (
@@ -59,9 +56,9 @@ class PillContainer extends Component {
 
     return (
       <>
-        <Row>{Pills}</Row>
+        {Pills}
         <br />
-        <Row>{Articles}</Row>
+        {Articles}
       </>
     );
   }

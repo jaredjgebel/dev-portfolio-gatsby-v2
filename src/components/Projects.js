@@ -1,26 +1,29 @@
 import React from "react";
 import styled from "styled-components";
-import { Row } from "styled-bootstrap-grid";
+import { Row, Col } from "react-grid-system";
 import { FlexCol } from "./styles/flex";
 import ProjectTable from "./ProjectTable";
 
 const ProjectsBackground = styled(Row)`
-  min-height: 28rem;
+  min-height: 100vh;
   background-color: whitesmoke;
   padding-bottom: 30px;
   margin: 0px;
 `;
 
 const Projects = () => (
-  <ProjectsBackground justifyContent="center">
-    <FlexCol col={8}>
-      <Row justifyContent="center" style={{ paddingTop: "75px" }}>
-        <h3 id="projects">Projects</h3>
-      </Row>
-      <Row justifyContent="center">
+  <ProjectsBackground>
+    <Row>
+      <Col>
+        <h3 id="projects">Projeasdfasdfcts</h3>
+      </Col>
+    </Row>
+
+    <Row>
+      <Col>
         <ProjectTable />
-      </Row>
-    </FlexCol>
+      </Col>
+    </Row>
   </ProjectsBackground>
 );
 

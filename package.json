@@ -17,15 +17,14 @@
     "gatsby-transformer-remark": "^2.1.7",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
+    "react-grid-system": "^5.0.2",
     "react-helmet": "^5.2.0",
     "react-rasta": "^1.0.4",
     "react-typography": "^0.16.13",
     "sharp": "^0.22.1",
-    "styled-bootstrap-grid": "^3.0.3",
     "styled-by": "^0.3.0",
     "styled-components": "^4.3.2",
     "typography": "^0.16.17",
-    "typography-theme-irving": "^0.15.10",
     "typography-theme-sutro": "^0.15.10"
   },
   "keywords": [

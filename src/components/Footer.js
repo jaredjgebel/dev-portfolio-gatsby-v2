@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import gatsby from "../images/gatsby-icon.png";
+import * as c from "./styles/index";
 
 const FooterBackground = styled.footer`
   height: 2rem;
-  background-color: #0d2620;
+  background-color: ${c.default.forest};
   color: whitesmoke;
   display: flex;
 `;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Col } from "styled-bootstrap-grid";
+import { Col } from "react-grid-system";
 
 export const FlexCol = styled(Col)`
   display: flex;

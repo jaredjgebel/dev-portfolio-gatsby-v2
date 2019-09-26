@@ -1,5 +1,5 @@
 import React from "react";
-import { Row } from "styled-bootstrap-grid";
+import { Row } from "react-grid-system";
 import { FlexCol } from "./styles/flex";
 
 const JavaScript = () => (

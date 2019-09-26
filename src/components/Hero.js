@@ -21,7 +21,7 @@ const HeroContainer = styled.div`
     #1e5f4c,
     #26735b
   );
-  height: 30rem;
+  height: 100vh;
 `;
 
 const HeroTitle = styled.div`

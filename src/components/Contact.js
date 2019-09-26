@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { Row } from "styled-bootstrap-grid";
+import { Row } from "react-grid-system";
 import { FlexCol } from "./styles/flex";
 import Headshot from "../components/Headshot";
 import * as c from "./styles/index";
 import github from "../images/github.png";
 
 const ContactBackground = styled(Row)`
-  min-height: 36rem;
+  min-height: 100vh;
   margin: 0px;
   background: ${c.default.forest};
   background: linear-gradient(

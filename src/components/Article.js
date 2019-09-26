@@ -1,5 +1,5 @@
 import React from "react";
-import { Row } from "styled-bootstrap-grid";
+import { Row, Col } from "react-grid-system";
 import { FlexCol } from "./styles/flex";
 import githubIcon from "../images/github.png";
 
@@ -11,43 +11,37 @@ const Article = ({
   visible
 }) => (
   <div hidden={visible}>
-    <Row style={{ display: "flex", alignItems: "center" }}>
-      <article style={{ padding: "0.25rem 1rem 0.25rem 1rem", height: "8rem" }}>
-        {text}
-      </article>
-    </Row>
-    <Row style={{ display: "flex", justifyContent: "center" }}>
-      <FlexCol col={10}>
-        <ul>
-          {projectHighlights.map((highlight, i) => (
-            <li key={i}>{highlight}</li>
-          ))}
-        </ul>
-      </FlexCol>
-    </Row>
-    <Row>
-      <FlexCol>
-        <a href={github} style={{ textAlign: "center" }}>
-          <img src={githubIcon} alt="Github repository" />
+    <article
+      style={{
+        padding: "0.25rem 1rem 0.25rem 1rem",
+        height: "8rem",
+        display: "flex",
+        alignItems: "center"
+      }}
+    >
+      {text}
+    </article>
+    <ul>
+      {projectHighlights.map((highlight, i) => (
+        <li key={i}>{highlight}</li>
+      ))}
+    </ul>
+    <a href={github} style={{ textAlign: "center" }}>
+      <img src={githubIcon} alt="Github repository" />
+    </a>
+    <h4>Technologies</h4>
+    <p>
+      {technologies.map((technology, i) => (
+        <a
+          href={technology.link}
+          style={{ textDecoration: "none", color: "black" }}
+          key={i}
+        >
+          {technology.name}
+          {i === technologies.length - 1 ? "" : ", "}
         </a>
-        <h4>Technologies</h4>
-        <p>
-          {technologies.map((technology, i) => (
-            <a
-              href={technology.link}
-              style={{ textDecoration: "none", color: "black" }}
-              key={i}
-            >
-              {technology.name}
-              {i === technologies.length - 1 ? "" : ", "}
-            </a>
-          ))}
-        </p>
-      </FlexCol>
-    </Row>
-    <Row>
-      <FlexCol></FlexCol>
-    </Row>
+      ))}
+    </p>
   </div>
 );
 

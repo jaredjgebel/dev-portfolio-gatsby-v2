@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
-import { Container, Row, Col, BaseCSS } from "styled-bootstrap-grid";
+import { Container, Row, Col } from "react-grid-system";
 import Header from "./header";
 import Footer from "../components/Footer";
 
@@ -19,7 +19,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <BaseCSS />
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -35,34 +34,20 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Container
-          fluid
-          style={{
-            paddingLeft: "0px",
-            paddingRight: "0px",
-            position: "relative",
-            overflowY: "hidden"
-          }}
-        >
-          <Row>
-            <Col>
+        <Container fluid>
+          <Row debug>
+            <Col debug>
               <Header />
             </Col>
           </Row>
-          <Row>
-            <Col>{children}</Col>
+          <Row debug>
+            <Col debug>{children}</Col>
           </Row>
-          <div
-            style={{
-              position: "absolute",
-              bottom: "0",
-              width: "100%",
-              paddingLeft: "0px",
-              paddingRight: "0px"
-            }}
-          >
-            <Footer />
-          </div>
+          <Row debug>
+            <Col debug>
+              <Footer />
+            </Col>
+          </Row>
         </Container>
       </>
     )}

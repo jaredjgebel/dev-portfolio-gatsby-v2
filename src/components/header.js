@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, Row, Col } from "styled-bootstrap-grid";
+import { Container, Row, Col } from "react-grid-system";
 import { FlexCol } from "./styles/flex";
 import NavLink from "../components/NavLink";
 import * as c from "./styles/index";
