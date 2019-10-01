@@ -50,6 +50,7 @@
       { "name": "Feather Icons", "link": "https://feathericons.com/" }
     ],
     "github": "https://github.com/jaredjgebel/practice-jeopardy",
+    "demo": "https://practice-jeopardy.herokuapp.com/",
     "projectHighlights": [
       "Implemented component, style, and SVG icon libraries for a clear, consistent, and accessible design",
       "Used Fetch API to gather information from j-Archive API",

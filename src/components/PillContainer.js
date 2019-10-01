@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import Pill from "./Pill";
+import PillLayout from "./PillLayout";
 import { Col, Row } from "react-grid-system";
 import Article from "./Article";
+import Pill from "./Pill";
 
 class PillContainer extends Component {
   constructor(props) {
@@ -48,6 +49,7 @@ class PillContainer extends Component {
         text={edge.node.article}
         technologies={edge.node.technologies}
         github={edge.node.github}
+        demo={edge.node.demo}
         projectHighlights={edge.node.projectHighlights}
         visible={!this.state[edge.node.title]}
         key={i}
@@ -56,7 +58,7 @@ class PillContainer extends Component {
 
     return (
       <>
-        {Pills}
+        <PillLayout>{Pills}</PillLayout>
         <br />
         {Articles}
       </>

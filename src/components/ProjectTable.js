@@ -17,6 +17,7 @@ const ProjectTable = () => (
                 link
               }
               github
+              demo
               projectHighlights
             }
           }

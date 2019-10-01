@@ -1,6 +1,6 @@
 import React from "react";
 import { FlexCol } from "./styles/flex";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 const StyledButton = styled.button`
   background: ${props => (props.active ? "#608699" : "white")};
@@ -8,7 +8,6 @@ const StyledButton = styled.button`
   width: 15rem;
   align-self: center;
   padding: 5px 0px;
-  /* border-radius: '10px 10px'; */
   margin-top: "20px";
 `;
 

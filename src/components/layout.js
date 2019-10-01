@@ -34,17 +34,21 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Container fluid style={{ padding: "0px" }}>
-          <Row nogutter debug>
-            <Col debug>
+        <Container
+          fluid
+          className="container"
+          style={{ overflowX: "hidden", padding: "0px" }}
+        >
+          <Row nogutter>
+            <Col>
               <Header />
             </Col>
           </Row>
-          <Row debug>
-            <Col debug>{children}</Col>
+          <Row nogutter>
+            <Col>{children}</Col>
           </Row>
-          <Row debug>
-            <Col debug>
+          <Row nogutter>
+            <Col>
               <Footer />
             </Col>
           </Row>

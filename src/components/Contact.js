@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { Row } from "react-grid-system";
 import { FlexCol } from "./styles/flex";
 import Headshot from "../components/Headshot";
@@ -10,7 +10,7 @@ const ContactBackground = styled("div")`
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 425px;
   margin: 0px;
   padding-top: 15px;
   background: ${c.default.forest};
@@ -42,19 +42,19 @@ const Contact = () => (
     </h2>
 
     <Row>
-      <FlexCol debug xs={12} md={6} alignItems="center">
+      <FlexCol xs={12} md={6} alignItems="center">
         <div>
           <Headshot />
         </div>
       </FlexCol>
 
-      <FlexCol debug xs={12} md={6}>
+      <FlexCol xs={12} md={6}>
         <p style={{ color: "whitesmoke", padding: "0px 10px 0px 10px" }}>
           I'm available for hire, and I'd love to hear from you if you have
           questions about me and my work.
         </p>
         <Row>
-          <FlexCol debug xs={6} justifyContent="center">
+          <FlexCol xs={6} justifyContent="center">
             <a
               href="mailto:jaredjgebel@gmail.com"
               style={{ alignSelf: "center" }}
@@ -62,7 +62,7 @@ const Contact = () => (
               <button>Email Me</button>
             </a>
           </FlexCol>
-          <FlexCol debug xs={6} alignItems="center" justifyContent="center">
+          <FlexCol xs={6} alignItems="center" justifyContent="center">
             <a href="https://github.com/jaredjgebel">
               <img src={github} style={{ margin: "0px" }} />
             </a>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { Col } from "react-grid-system";
 
 export const FlexCol = styled(Col)`

@@ -1,6 +1,6 @@
 import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-grid-system";
+import styled from "styled-components/macro";
+import { Container, Row, Col, ScreenClassRender } from "react-grid-system";
 import { FlexCol } from "./styles/flex";
 import NavLink from "../components/NavLink";
 import * as c from "./styles/index";
@@ -13,19 +13,25 @@ const HeaderRow = styled(Row)`
 const Header = () => (
   <Container fluid={true}>
     <HeaderRow>
-      <FlexCol col={12} direction="row">
-        <Row
-          justifyContent="center"
-          smJustifyContent="end"
-          alignItems="center"
-          style={{ width: "100%" }}
-        >
-          <Col style={{ width: "auto", paddingRight: "0px" }}>
-            <NavLink name="About" href="#about" />
-            <NavLink name="Projects" href="#projects" />
-            <NavLink name="Contact" href="#contact" />
-          </Col>
-        </Row>
+      <FlexCol direction="row" alignItems="center">
+        <ScreenClassRender
+          render={screenClass => (
+            <Col
+              style={{
+                width: "auto",
+                paddingRight: "0px",
+                display: "flex",
+                justifyContent: ["xs"].includes(screenClass)
+                  ? "center"
+                  : "flex-end"
+              }}
+            >
+              <NavLink name="About" href="#about" />
+              <NavLink name="Projects" href="#projects" />
+              <NavLink name="Contact" href="#contact" />
+            </Col>
+          )}
+        />
       </FlexCol>
     </HeaderRow>
   </Container>
