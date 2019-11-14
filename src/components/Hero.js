@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import * as c from "./styles/index";
 
-const HeroContainer = styled.div`
+const Container = styled.div`
   color: whitesmoke;
   background: ${c.default.forest};
   background: linear-gradient(
@@ -24,30 +24,53 @@ const HeroContainer = styled.div`
   height: 100vh;
 `;
 
-const HeroTitle = styled.div`
+const Top = styled.div`
   display: flex;
   height: 40%;
   justify-content: center;
   align-items: flex-end;
 `;
 
-const HeroSubtitle = styled.div`
+const Bottom = styled.div`
   display: flex;
   height: 60%;
   justify-content: center;
   align-items: flex-start;
 `;
 
-const Hero = ({ title, subtitle }) => (
-  <HeroContainer>
-    <HeroTitle>
-      <h1 style={{ fontSize: "60px", marginBottom: "10px" }}>{title}</h1>
-    </HeroTitle>
+const Title = styled.h1`
+  font-size: 56px;
+  @media (min-width: 768px) {
+    font-size: 64px;
+  }
 
-    <HeroSubtitle>
-      <h4 style={{ marginTop: "1rem" }}>{subtitle}</h4>
-    </HeroSubtitle>
-  </HeroContainer>
+  @media (min-width: 1184px) {
+    font-size: 84px;
+  }
+`;
+
+const Subtitle = styled.h4`
+  margin-top: 0.8rem;
+  font-size: 24px;
+  @media (min-width: 768px) {
+    font-size: 36px;
+  }
+
+  @media (min-width: 1184px) {
+    font-size: 48px;
+  }
+`;
+
+const Hero = ({ title, subtitle }) => (
+  <Container>
+    <Top>
+      <Title>{title}</Title>
+    </Top>
+
+    <Bottom>
+      <Subtitle>{subtitle}</Subtitle>
+    </Bottom>
+  </Container>
 );
 
 export default Hero;

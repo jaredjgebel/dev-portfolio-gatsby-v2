@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Col } from "react-grid-system";
-import { FlexCol } from "./styles/flex";
 import githubIcon from "../images/github.png";
 
 const Article = ({

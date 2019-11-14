@@ -1,4 +1,3 @@
 {
-   "prettier.requireConfig": true,
-   "prettier.stylelintIntegration": true
+   "prettier.requireConfig": true
 }
