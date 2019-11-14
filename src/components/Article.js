@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "react-grid-system";
+import { Col } from "react-grid-system";
 import githubIcon from "../images/github.png";
 
 const Article = ({

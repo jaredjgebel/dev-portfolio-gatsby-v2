@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PillLayout from "./PillLayout";
-import { Col, Row } from "react-grid-system";
 import Article from "./Article";
 import Pill from "./Pill";
 

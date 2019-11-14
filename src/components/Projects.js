@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { Row, Col } from "react-grid-system";
-import { FlexCol } from "./styles/flex";
 import ProjectTable from "./ProjectTable";
 
 const ProjectsBackground = styled("div")`
