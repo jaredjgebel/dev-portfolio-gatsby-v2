@@ -7,7 +7,7 @@ import * as c from "./styles/index";
 
 const HeaderRow = styled(Row)`
   min-height: 2.5rem;
-  background-color: ${c.default.forest};
+  background-color: ${c.default.lightTeal};
 `;
 
 const Header = () => (
@@ -26,9 +26,9 @@ const Header = () => (
                   : "flex-end"
               }}
             >
-              <NavLink name="About" href="#about" />
-              <NavLink name="Projects" href="#projects" />
-              <NavLink name="Contact" href="#contact" />
+              <NavLink name="About" href="/#about" />
+              <NavLink name="Projects" href="/#projects" />
+              <NavLink name="Contact" href="/#contact" />
             </Col>
           )}
         />

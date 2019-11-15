@@ -45,6 +45,7 @@ class PillContainer extends Component {
 
     const Articles = edges.map((edge, i) => (
       <Article
+        title={edge.node.title}
         text={edge.node.article}
         technologies={edge.node.technologies}
         github={edge.node.github}

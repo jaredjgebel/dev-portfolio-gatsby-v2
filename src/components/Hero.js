@@ -49,14 +49,15 @@ const Title = styled.h1`
   }
 `;
 
-const Subtitle = styled.h4`
-  margin-top: 0.8rem;
+const Subtitle = styled.h2`
+  margin-top: -0.3rem;
   font-size: 24px;
   @media (min-width: 768px) {
     font-size: 36px;
   }
 
   @media (min-width: 1184px) {
+    margin-top: 1rem;
     font-size: 48px;
   }
 `;

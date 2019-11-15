@@ -3,6 +3,7 @@ import { Col } from "react-grid-system";
 import githubIcon from "../images/github.png";
 
 const Article = ({
+  title,
   text,
   technologies,
   github,
@@ -11,6 +12,7 @@ const Article = ({
   visible
 }) => (
   <Col hidden={visible}>
+    <h3 style={{ textAlign: "center" }}>{title}</h3>
     <article style={{ padding: "0px 70px" }}>
       <p>{text}</p>
       <ul>

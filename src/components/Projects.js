@@ -14,9 +14,9 @@ const Projects = () => (
   <ProjectsBackground>
     <Row>
       <Col>
-        <h3 id="projects" style={{ textAlign: "center" }}>
+        <h2 id="projects" style={{ textAlign: "center" }}>
           Projects
-        </h3>
+        </h2>
       </Col>
     </Row>
 
