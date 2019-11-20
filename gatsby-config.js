@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Jared Gebel, Full Stack Web Developer"
+    title: "Jared Gebel, Web Developer"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -33,7 +33,16 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      }
+    },
     `gatsby-transformer-remark`,
-    `gatsby-transformer-json`
+    `gatsby-transformer-json`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`
   ]
 };
