@@ -2,6 +2,19 @@ import React, { Component } from "react";
 import PillLayout from "./PillLayout";
 import Article from "./Article";
 import Pill from "./Pill";
+import ArtSlidePuzzlesImage from "../images/gatsby-images/art-slide-puzzles-image";
+import PracticeJeopardyImage from "../images/gatsby-images/practice-jeopardy-image";
+
+const getScreenshot = title => {
+  switch (title) {
+    case "Art Slide Puzzles":
+      return <ArtSlidePuzzlesImage />;
+    case "Practice Jeopardy!":
+      return <PracticeJeopardyImage />;
+    default:
+      return null;
+  }
+};
 
 class PillContainer extends Component {
   constructor(props) {
@@ -52,6 +65,7 @@ class PillContainer extends Component {
         demo={edge.node.demo}
         projectHighlights={edge.node.projectHighlights}
         visible={!this.state[edge.node.title]}
+        screenshot={getScreenshot(edge.node.title)}
         key={i}
       />
     ));
