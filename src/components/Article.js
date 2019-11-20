@@ -40,7 +40,12 @@ const Article = ({
               alignItems: "center"
             }}
           >
-            <a href={demo} style={{ color: "black" }}>
+            <a
+              href={demo}
+              style={{ color: "black" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Demo
             </a>
             <small>May need a few extra seconds to load</small>
