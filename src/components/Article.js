@@ -9,7 +9,8 @@ const Article = ({
   github,
   demo,
   projectHighlights,
-  visible
+  visible,
+  screenshot
 }) => (
   <Col hidden={visible}>
     <h3 style={{ textAlign: "center" }}>{title}</h3>
@@ -24,13 +25,10 @@ const Article = ({
         style={{
           display: "flex",
           justifyContent: "space-around",
+          flexDirection: "column",
           alignItems: "center"
         }}
       >
-        <a href={github}>
-          <img src={githubIcon} alt="Github repository" />
-        </a>
-
         {demo ? (
           <div
             className="demo"
@@ -40,12 +38,23 @@ const Article = ({
               alignItems: "center"
             }}
           >
-            <a href={demo} style={{ color: "black" }}>
-              Demo
+            <h4>Demo</h4>
+            <a
+              href={demo}
+              style={{ color: "black" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {screenshot}
             </a>
+
             <small>May need a few extra seconds to load</small>
           </div>
         ) : null}
+
+        <a href={github} style={{ paddingTop: "20px" }}>
+          <img src={githubIcon} alt="Github repository" />
+        </a>
       </div>
       <h4>Technologies</h4>
       <p>

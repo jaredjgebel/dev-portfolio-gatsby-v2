@@ -1,5 +1,36 @@
 [
   {
+    "title": "Practice Jeopardy!",
+    "article": "A React app to practice questions from the game show Jeopardy!",
+    "technologies": [
+      { "name": "React", "link": "https://reactjs.org/" },
+      { "name": "Feather Icons", "link": "https://feathericons.com/" }
+    ],
+    "github": "https://github.com/jaredjgebel/practice-jeopardy",
+    "demo": "https://practice-jeopardy.herokuapp.com/",
+    "projectHighlights": [
+      "Implemented component, style, and SVG icon libraries for a clear, consistent, and accessible design",
+      "Used Fetch API to gather information from j-Archive API",
+      "Responsive design for app to be used predictably across devices"
+    ]
+  },
+  {
+    "title": "Art Slide Puzzles",
+    "article": "A slide puzzle application, using React to display puzzle pieces as a given set of UI state.",
+    "technologies": [
+      { "name": "React", "link": "https://reactjs.org/" },
+      { "name": "Lodash", "link": "https://lodash.com/" },
+      { "name": "Jest", "link": "https://jestjs.io/" }
+    ],
+    "github": "https://github.com/jaredjgebel/art-slide-puzzle",
+    "demo": "https://wizardly-meninsky-bce7ec.netlify.com/",
+    "projectHighlights": [
+      "Created a coordinate system and methods for manipulating said coordinates by using 2D arrays to generate each given puzzle view",
+      "Utilized React’s Context API to persist state for puzzle and coordinates",
+      "Possible to extend app to create slide puzzles from any image"
+    ]
+  },
+  {
     "title": "'Djello' Project Management",
     "article": "Task manager for teams. Allows for assignment of team members to tasks, groups similar tasks together into boards and lists, and automatically tracks the history of each task.",
     "technologies": [
@@ -25,36 +56,6 @@
       "Built with Webpack, using Babel to integrate ES6 and ES7 features",
       "Authenticated application and API by integrating Auth0 service",
       "Thorough testing of API and database methods with Jasmine"
-    ]
-  },
-  {
-    "title": "Art Slide Puzzles",
-    "article": "A slide puzzle application, using React to display puzzle pieces as a given set of UI state.",
-    "technologies": [
-      { "name": "React", "link": "https://reactjs.org/" },
-      { "name": "Lodash", "link": "https://lodash.com/" },
-      { "name": "Jest", "link": "https://jestjs.io/" }
-    ],
-    "github": "https://github.com/jaredjgebel/art-slide-puzzle",
-    "projectHighlights": [
-      "Created a coordinate system and methods for manipulating said coordinates by using 2D arrays to generate each given puzzle view",
-      "Utilized React’s Context API to persist state for puzzle and coordinates",
-      "Possible to extend app to create slide puzzles from any image"
-    ]
-  },
-  {
-    "title": "Practice Jeopardy!",
-    "article": "A React app to practice questions from the game show Jeopardy!",
-    "technologies": [
-      { "name": "React", "link": "https://reactjs.org/" },
-      { "name": "Feather Icons", "link": "https://feathericons.com/" }
-    ],
-    "github": "https://github.com/jaredjgebel/practice-jeopardy",
-    "demo": "https://practice-jeopardy.herokuapp.com/",
-    "projectHighlights": [
-      "Implemented component, style, and SVG icon libraries for a clear, consistent, and accessible design",
-      "Used Fetch API to gather information from j-Archive API",
-      "Responsive design for app to be used predictably across devices"
     ]
   },
   {
