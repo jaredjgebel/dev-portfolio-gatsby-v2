@@ -35,16 +35,17 @@ const Article = ({
             style={{
               display: "flex",
               flexDirection: "column",
-              alignItems: "center"
+              alignItems: "center",
+              justifyContent: "center"
             }}
           >
-            <h4>Demo</h4>
             <a
               href={demo}
               style={{ color: "black" }}
               target="_blank"
               rel="noopener noreferrer"
             >
+              <h4 style={{ textAlign: "center" }}>Demo</h4>
               {screenshot}
             </a>
 
@@ -52,7 +53,11 @@ const Article = ({
           </div>
         ) : null}
 
-        <a href={github} style={{ paddingTop: "20px" }}>
+        <a
+          href={github}
+          rel="noopener noreferrer"
+          style={{ paddingTop: "20px" }}
+        >
           <img src={githubIcon} alt="Github repository" />
         </a>
       </div>
