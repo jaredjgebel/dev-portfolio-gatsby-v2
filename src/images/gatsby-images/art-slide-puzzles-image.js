@@ -11,7 +11,7 @@ export default () => {
         }
       ) {
         childImageSharp {
-          fixed(height: 250) {
+          fixed(height: 300) {
             ...GatsbyImageSharpFixed
           }
         }
