@@ -26,16 +26,23 @@ const Container = styled.div`
 
 const Top = styled.div`
   display: flex;
-  height: 40%;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  height: 60%;
 `;
 
 const Bottom = styled.div`
   display: flex;
-  height: 60%;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
+  height: 40%;
+
+  & p {
+    margin-bottom: 2px;
+    text-align: center;
+  }
 `;
 
 const Title = styled.h1`
@@ -66,10 +73,13 @@ const Hero = ({ title, subtitle }) => (
   <Container>
     <Top>
       <Title>{title}</Title>
+      <Subtitle>{subtitle}</Subtitle>
     </Top>
 
     <Bottom>
-      <Subtitle>{subtitle}</Subtitle>
+      <p>HTML, CSS, React, Redux, Gatsby</p>
+      <p>Node, Express, Postgres (SQL), MongoDB (NoSQL)</p>
+      <p>Github, Visual Studio Code, Command Line, Chrome Dev Tools</p>
     </Bottom>
   </Container>
 );

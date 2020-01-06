@@ -10,6 +10,7 @@ const LayoutGrid = styled.div`
   grid-row-gap: 20px;
   justify-items: stretch;
   align-items: stretch;
+  margin-bottom: 20px;
 `;
 
 const PillLayout = ({ children }) => {
@@ -23,19 +24,3 @@ const PillLayout = ({ children }) => {
 };
 
 export default PillLayout;
-
-/* 
-    <ScreenClassRender
-      render={screenClass => (
-        <LayoutGrid
-          style={{
-            gridTemplate: ["xs"].includes(screenClass)
-              ? "1fr / 1fr"
-              : "1fr 1fr / 1fr 1fr"
-          }}
-        >
-          {children}
-        </LayoutGrid>
-      )}
-    ></ScreenClassRender>
-*/

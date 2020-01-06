@@ -18,12 +18,6 @@ module.exports = {
     },
     "gatsby-plugin-offline",
     {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`
-      }
-    },
-    {
       resolve: `gatsby-plugin-styled-components`
     },
     {
@@ -37,7 +31,18 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
+        path: `${__dirname}/src/images/`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Titillium Web`,
+            variants: [`400`, `700`]
+          }
+        ]
       }
     },
     `gatsby-transformer-remark`,

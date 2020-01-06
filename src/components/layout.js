@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from "gatsby";
 import { Container, Row, Col } from "react-grid-system";
 import Header from "./header";
 import Footer from "../components/Footer";
+import "./layout.css";
 
 const Layout = ({ children }) => (
   <StaticQuery
