@@ -14,7 +14,7 @@ const Projects = () => (
   <ProjectsBackground>
     <Row>
       <Col>
-        <h2 id="projects" style={{ textAlign: "center" }}>
+        <h2 id="projects" style={{ textAlign: "center", paddingTop: "20px" }}>
           Projects
         </h2>
       </Col>
@@ -22,7 +22,7 @@ const Projects = () => (
 
     <Row>
       <Col>
-        <ProjectTable />
+        <ProjectTable style={{ paddingTop: "20px" }} />
       </Col>
     </Row>
   </ProjectsBackground>

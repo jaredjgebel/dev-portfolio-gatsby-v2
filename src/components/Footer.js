@@ -24,9 +24,8 @@ const Footer = () => (
           href="https://www.gatsbyjs.org/"
           style={{ textDecoration: "none", color: "whitesmoke" }}
         >
-          <img src={gatsby} style={{ width: "25px" }} alt="Gatsby.js" />
+          <img src={gatsby} style={{ height: "18px" }} alt="Gatsby.js" />
         </a>{" "}
-        v2
       </p>
     </div>
   </FooterBackground>
