@@ -5,6 +5,7 @@ import { FlexCol } from "./styles/flex";
 import Headshot from "../components/Headshot";
 import * as c from "./styles/index";
 import github from "../images/github.png";
+import linkedIn from "../images/linkedin.png";
 
 const ContactBackground = styled("div")`
   display: flex;
@@ -54,7 +55,7 @@ const Contact = () => (
           questions about me and my work.
         </p>
         <Row>
-          <FlexCol xs={6} justifyContent="center">
+          <FlexCol xs={6} md={12} alignItems="center" justifyContent="center">
             <a
               href="mailto:jaredjgebel@gmail.com"
               style={{ alignSelf: "center" }}
@@ -62,10 +63,23 @@ const Contact = () => (
               <button>Email Me</button>
             </a>
           </FlexCol>
-          <FlexCol xs={6} alignItems="center" justifyContent="center">
-            <a href="https://github.com/jaredjgebel">
-              <img src={github} style={{ margin: "0px" }} />
-            </a>
+          <FlexCol xs={6} md={12} alignItems="center" justifyContent="center">
+            <div style={{ marginTop: "25px" }}>
+              <a href="https://github.com/jaredjgebel">
+                <img
+                  src={github}
+                  alt="Github Profile"
+                  style={{ marginRight: "30px", height: "64px" }}
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/jaredjgebel/">
+                <img
+                  src={linkedIn}
+                  alt="LinkedIn Page"
+                  style={{ height: "64px" }}
+                />
+              </a>
+            </div>
           </FlexCol>
         </Row>
       </FlexCol>
