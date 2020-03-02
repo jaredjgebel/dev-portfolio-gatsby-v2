@@ -34,20 +34,10 @@ module.exports = {
         path: `${__dirname}/src/images/`
       }
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Titillium Web`,
-            variants: [`400`, `700`]
-          }
-        ]
-      }
-    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-preload-fonts`
   ]
 };

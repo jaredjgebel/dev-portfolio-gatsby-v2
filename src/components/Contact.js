@@ -6,7 +6,6 @@ import Headshot from "../components/Headshot";
 import * as c from "./styles/index";
 import github from "../images/github.png";
 import linkedIn from "../images/linkedin.png";
-import email from "../images/mail.svg";
 
 const ContactBackground = styled("div")`
   display: flex;
