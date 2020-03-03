@@ -10,7 +10,7 @@ const ProjectsBackground = styled("div")`
   margin: 0px;
 `;
 
-const Projects = () => (
+const ProjectsLayout = () => (
   <ProjectsBackground>
     <Row>
       <Col>
@@ -28,4 +28,4 @@ const Projects = () => (
   </ProjectsBackground>
 );
 
-export default Projects;
+export default ProjectsLayout;

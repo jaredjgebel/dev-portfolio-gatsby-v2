@@ -1,6 +1,6 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
-import PillContainer from "./PillContainer";
+import AccordionContainer from "./AccordionContainer";
 
 const ProjectTable = () => (
   <StaticQuery
@@ -24,7 +24,7 @@ const ProjectTable = () => (
         }
       }
     `}
-    render={data => <PillContainer edges={data.allProjectJson.edges} />}
+    render={data => <AccordionContainer edges={data.allProjectJson.edges} />}
   />
 );
 

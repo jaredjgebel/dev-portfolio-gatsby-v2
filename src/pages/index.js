@@ -4,7 +4,7 @@ import { Grommet } from "grommet";
 import Layout from "../components/layout";
 import Hero from "../components/Hero";
 import Profile from "../components/Profile";
-import Projects from "../components/Projects";
+import ProjectsLayout from "../components/ProjectsLayout";
 import Contact from "../components/Contact";
 
 const IndexPage = () => (
@@ -23,7 +23,7 @@ const IndexPage = () => (
         </Row>
         <Row>
           <Col>
-            <Projects />
+            <ProjectsLayout />
           </Col>
         </Row>
         <Row>
