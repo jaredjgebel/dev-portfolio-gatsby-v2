@@ -2,10 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
+import { ThemeProvider, CSSReset } from "@chakra-ui/core";
+import theme from "../components/styles/theme";
 import { Container, Row, Col } from "react-grid-system";
 import Header from "./header";
 import Footer from "../components/Footer";
-import "./layout.css";
+// import "./layout.css";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -39,7 +41,7 @@ const Layout = ({ children }) => (
             sizes="180x180"
             href="../images/favicon/apple-touch-icon.png"
           />
-          >
+
           <link
             rel="icon"
             type="image/png"
@@ -52,27 +54,15 @@ const Layout = ({ children }) => (
             sizes="16x16"
             href="../images/favicon/favicon-16x16.png"
           />
-          <link rel="manifest" href="../images/favicon/site.webmanifest" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,200;1,500;1,900&display=swap"
+            rel="stylesheet"
+          />
         </Helmet>
-        <Container
-          fluid
-          className="container"
-          style={{ overflowX: "hidden", padding: "0px" }}
-        >
-          <Row nogutter>
-            <Col>
-              <Header />
-            </Col>
-          </Row>
-          <Row nogutter>
-            <Col>{children}</Col>
-          </Row>
-          <Row nogutter>
-            <Col>
-              <Footer />
-            </Col>
-          </Row>
-        </Container>
+        <ThemeProvider theme={theme}>
+          <CSSReset />
+          {children}
+        </ThemeProvider>
       </>
     )}
   />

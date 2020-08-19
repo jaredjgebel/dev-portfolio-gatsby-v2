@@ -1,87 +1,58 @@
 import React from "react";
-import styled from "styled-components/macro";
-import * as c from "./styles/index";
+import { Flex, Heading, Grid } from "@chakra-ui/core";
+import topography from "../images/topography.svg";
 
-const Container = styled.div`
-  color: whitesmoke;
-  background: ${c.default.forest};
-  background: linear-gradient(
-    to top,
-    #0d2620,
-    #12382e,
-    #184b3d,
-    #1e5f4c,
-    #26735b
+function Hero() {
+  return (
+    <Grid
+      backgroundImage={`url('${topography}'), linear-gradient(90deg, hsla(33, 21%, 81%, 1) 0%, hsla(26, 7%, 80%, 1) 100%)`}
+      minHeight="100vh"
+      p={[4, 10, 10, 10]}
+      gridTemplateRows="1fr 1fr"
+    >
+      <Flex className="hero-headings" direction="column" align="flex-end">
+        <Heading
+          as="h1"
+          fontStyle="italic"
+          fontSize={["42px", "56px", "64px", "80px"]}
+        >
+          Jared Gebel
+        </Heading>
+        <Heading
+          as="h2"
+          fontStyle="italic"
+          fontWeight="medium"
+          fontSize={["28px", "34px", "42px", "50px"]}
+        >
+          Web Developer
+        </Heading>
+      </Flex>
+
+      <Flex
+        className="hero-subheadings"
+        direction="column"
+        align="flex-end"
+        justify="flex-end"
+      >
+        <Heading
+          as="h3"
+          fontStyle="italic"
+          fontWeight=""
+          fontSize={["20px", "24px", "28px", "32px"]}
+        >
+          JavaScript • Node.js • React
+        </Heading>
+        <Heading
+          as="h3"
+          fontStyle="italic"
+          fontWeight="medium"
+          fontSize={["20px", "24px", "28px", "32px"]}
+        >
+          Express • Gatsby • REST APIs
+        </Heading>
+      </Flex>
+    </Grid>
   );
-  background: -webkit-linear-gradient(
-    to top,
-    #0d2620,
-    #12382e,
-    #184b3d,
-    #1e5f4c,
-    #26735b
-  );
-  height: 100vh;
-`;
-
-const Top = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 60%;
-`;
-
-const Bottom = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 40%;
-
-  & p {
-    margin-bottom: 2px;
-    text-align: center;
-  }
-`;
-
-const Title = styled.h1`
-  font-size: 56px;
-  @media (min-width: 768px) {
-    font-size: 64px;
-  }
-
-  @media (min-width: 1184px) {
-    font-size: 84px;
-  }
-`;
-
-const Subtitle = styled.h2`
-  margin-top: -0.3rem;
-  font-size: 24px;
-  @media (min-width: 768px) {
-    font-size: 36px;
-  }
-
-  @media (min-width: 1184px) {
-    margin-top: 1rem;
-    font-size: 48px;
-  }
-`;
-
-const Hero = ({ title, subtitle }) => (
-  <Container>
-    <Top>
-      <Title>{title}</Title>
-      <Subtitle>{subtitle}</Subtitle>
-    </Top>
-
-    <Bottom>
-      <p>HTML, CSS, React, Redux, Gatsby</p>
-      <p>Node, Express, Postgres (SQL), MongoDB (NoSQL)</p>
-      <p>Github, Visual Studio Code, Command Line, Chrome Dev Tools</p>
-    </Bottom>
-  </Container>
-);
+}
 
 export default Hero;

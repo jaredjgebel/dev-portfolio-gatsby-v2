@@ -21,6 +21,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 // using graphql query
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
+
   return new Promise((resolve, reject) => {
     graphql(`
       {
