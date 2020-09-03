@@ -11,8 +11,8 @@ export default () => {
         }
       ) {
         childImageSharp {
-          fixed(height: 300) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 700) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -20,7 +20,7 @@ export default () => {
   `);
   return (
     <Img
-      fixed={data.file.childImageSharp.fixed}
+      fluid={data.file.childImageSharp.fluid}
       alt="Practice Jeopardy! demo screenshot"
     />
   );
