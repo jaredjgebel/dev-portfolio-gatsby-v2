@@ -1,5 +1,6 @@
 import React from "react";
-import githubIcon from "../images/github.png";
+import { Box, Flex, Link, List, Text, Heading, Icon } from "@chakra-ui/core";
+import Demo from "./Demo";
 
 const Project = ({
   text,
@@ -7,65 +8,44 @@ const Project = ({
   github,
   demo,
   projectHighlights,
-  screenshot
+  screenshot,
 }) => (
-  <div style={{ padding: "0px 70px" }}>
-    <p>{text}</p>
-    <ul>
+  <Flex direction="column">
+    <Text fontSize="lg" paddingBottom={4}>
+      {text}
+    </Text>
+
+    <List styleType="disc" paddingBottom={4}>
       {projectHighlights.map((highlight, i) => (
         <li key={i}>{highlight}</li>
       ))}
-    </ul>
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-around",
-        flexDirection: "column",
-        alignItems: "center"
-      }}
-    >
-      {demo ? (
-        <div
-          className="demo"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center"
-          }}
-        >
-          <a
-            href={demo}
-            style={{ color: "black" }}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h4 style={{ textAlign: "center" }}>Demo</h4>
-            {screenshot}
-          </a>
+    </List>
 
-          <small>May need a few extra seconds to load</small>
-        </div>
-      ) : null}
+    <Box py={4}>
+      <Heading as="h4" fontSize="lg" color="gray.700">
+        Technologies
+      </Heading>
+      {technologies.map((technology, i) => (
+        <Link key={i}>
+          {technology.name}
+          {i === technologies.length - 1 ? "" : ", "}
+        </Link>
+      ))}
+    </Box>
 
-      <a href={github} rel="noopener noreferrer" style={{ paddingTop: "20px" }}>
-        <img src={githubIcon} alt="Github repository" />
-      </a>
-      <h4>Technologies</h4>
-      <p>
-        {technologies.map((technology, i) => (
-          <a
-            href={technology.link}
-            style={{ textDecoration: "none", color: "black" }}
-            key={i}
-          >
-            {technology.name}
-            {i === technologies.length - 1 ? "" : ", "}
-          </a>
-        ))}
-      </p>
-    </div>
-  </div>
+    {demo && <Demo demo={demo} screenshot={screenshot} />}
+
+    <Flex justifyContent="center">
+      <Link
+        href={github}
+        target="_blank"
+        rel="noopener noreferrer"
+        height="50px"
+      >
+        <Icon focusable name="github" size="50px" />
+      </Link>
+    </Flex>
+  </Flex>
 );
 
 export default Project;

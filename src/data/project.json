@@ -1,5 +1,33 @@
 [
   {
+    "title": "'Djello' Project Management",
+    "article": "Task manager for teams. Allows for assignment of team members to tasks, groups similar tasks together into boards and lists, and automatically tracks the history of each task.",
+    "technologies": [
+      { "name": "PostgreSQL", "link": "https://www.postgresql.org/" },
+      {
+        "name": "Express",
+        "link": "https://expressjs.com/"
+      },
+      { "name": "React", "link": "https://reactjs.org/" },
+      { "name": "Redux", "link": "https://redux.js.org/" },
+      { "name": "Webpack", "link": "https://webpack.js.org/" },
+      { "name": "Babel", "link": "https://babeljs.io/" },
+      { "name": "Auth0", "link": "https://auth0.com/" },
+      { "name": "Sequelize.js", "link": "http://docs.sequelizejs.com/" },
+      { "name": "Jasmine", "link": "https://jasmine.github.io/" }
+    ],
+    "github": "https://github.com/jaredjgebel/project_djello",
+    "projectHighlights": [
+      "Created and managed database environment, including models, seeders, and migrations, with PostgreSQL and Sequelize.js",
+      "Built Express.js REST API to serve application data from server",
+      "Composed reusable components in React for the creation of dynamic views",
+      "Used Redux to interact with API and manage application state, using best practices to ensure data immutability",
+      "Built with Webpack, using Babel to integrate ES6 and ES7 features",
+      "Authenticated application and API by integrating Auth0 service",
+      "Thorough testing of API and database methods with Jasmine"
+    ]
+  },
+  {
     "title": "Practice Jeopardy!",
     "article": "A React app to practice questions from the game show Jeopardy!",
     "technologies": [
@@ -28,34 +56,6 @@
       "Created a coordinate system and methods for manipulating said coordinates by using 2D arrays to generate each given puzzle view",
       "Utilized React’s Context API to persist state for puzzle and coordinates",
       "Possible to extend app to create slide puzzles from any image"
-    ]
-  },
-  {
-    "title": "'Djello' Project Management",
-    "article": "Task manager for teams. Allows for assignment of team members to tasks, groups similar tasks together into boards and lists, and automatically tracks the history of each task.",
-    "technologies": [
-      { "name": "PostgreSQL", "link": "https://www.postgresql.org/" },
-      {
-        "name": "Express",
-        "link": "https://expressjs.com/"
-      },
-      { "name": "React", "link": "https://reactjs.org/" },
-      { "name": "Redux", "link": "https://redux.js.org/" },
-      { "name": "Webpack", "link": "https://webpack.js.org/" },
-      { "name": "Babel", "link": "https://babeljs.io/" },
-      { "name": "Auth0", "link": "https://auth0.com/" },
-      { "name": "Sequelize.js", "link": "http://docs.sequelizejs.com/" },
-      { "name": "Jasmine", "link": "https://jasmine.github.io/" }
-    ],
-    "github": "https://github.com/jaredjgebel/project_djello",
-    "projectHighlights": [
-      "Created and managed database environment, including models, seeders, and migrations, with PostgreSQL and Sequelize.js",
-      "Built Express.js REST API to serve application data from server",
-      "Composed reusable components in React for the creation of dynamic views",
-      "Used Redux to interact with API and manage application state, using best practices to ensure data immutability",
-      "Built with Webpack, using Babel to integrate ES6 and ES7 features",
-      "Authenticated application and API by integrating Auth0 service",
-      "Thorough testing of API and database methods with Jasmine"
     ]
   },
   {

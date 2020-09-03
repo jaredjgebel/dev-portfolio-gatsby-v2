@@ -1,34 +1,13 @@
 import React from "react";
-import styled from "styled-components/macro";
-import gatsby from "../images/gatsby-icon.png";
-import * as c from "./styles/index";
-
-const FooterBackground = styled.footer`
-  height: 2rem;
-  background-color: ${c.default.forest};
-  color: whitesmoke;
-  display: flex;
-`;
+import { Flex, Icon, Text } from "@chakra-ui/core";
 
 const Footer = () => (
-  <FooterBackground>
-    <div style={{ alignSelf: "center" }}>
-      <p
-        style={{
-          marginBottom: "0px",
-          paddingLeft: "10px"
-        }}
-      >
-        Site created with{" "}
-        <a
-          href="https://www.gatsbyjs.org/"
-          style={{ textDecoration: "none", color: "whitesmoke" }}
-        >
-          <img src={gatsby} style={{ height: "18px" }} alt="Gatsby.js" />
-        </a>{" "}
-      </p>
-    </div>
-  </FooterBackground>
+  <Flex alignItems="center" px={6} py={2}>
+    <Text fontSize="lg" fontWeight="bold" paddingRight="5px">
+      Created with{" "}
+    </Text>
+    <Icon name="gatsby" color="purple.700" role="img" />
+  </Flex>
 );
 
 export default Footer;

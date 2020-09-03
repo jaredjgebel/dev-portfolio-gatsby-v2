@@ -1,15 +1,9 @@
 import React from "react";
 import { Flex, Heading, Grid } from "@chakra-ui/core";
-import topography from "../images/topography.svg";
 
 function Hero() {
   return (
-    <Grid
-      backgroundImage={`url('${topography}'), linear-gradient(90deg, hsla(33, 21%, 81%, 1) 0%, hsla(26, 7%, 80%, 1) 100%)`}
-      minHeight="100vh"
-      p={[4, 10, 10, 10]}
-      gridTemplateRows="1fr 1fr"
-    >
+    <Grid minHeight="100vh" p={[4, 10, 10, 10]} gridTemplateRows="1fr 1fr">
       <Flex className="hero-headings" direction="column" align="flex-end">
         <Heading
           as="h1"
@@ -19,7 +13,6 @@ function Hero() {
           Jared Gebel
         </Heading>
         <Heading
-          as="h2"
           fontStyle="italic"
           fontWeight="medium"
           fontSize={["28px", "34px", "42px", "50px"]}
@@ -39,6 +32,7 @@ function Hero() {
           fontStyle="italic"
           fontWeight=""
           fontSize={["20px", "24px", "28px", "32px"]}
+          paddingBottom="5px"
         >
           JavaScript • Node.js • React
         </Heading>
@@ -48,7 +42,7 @@ function Hero() {
           fontWeight="medium"
           fontSize={["20px", "24px", "28px", "32px"]}
         >
-          Express • Gatsby • REST APIs
+          HTML • CSS • Express • REST APIs
         </Heading>
       </Flex>
     </Grid>

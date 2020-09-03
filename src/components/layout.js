@@ -3,11 +3,7 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 import { ThemeProvider, CSSReset } from "@chakra-ui/core";
-import theme from "../components/styles/theme";
-import { Container, Row, Col } from "react-grid-system";
-import Header from "./header";
-import Footer from "../components/Footer";
-// import "./layout.css";
+import theme from "./styles/theme";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -56,6 +52,10 @@ const Layout = ({ children }) => (
           />
           <link
             href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,200;1,500;1,900&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
             rel="stylesheet"
           />
         </Helmet>
