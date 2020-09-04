@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 import { ThemeProvider, CSSReset } from "@chakra-ui/core";
 import theme from "./styles/theme";
@@ -16,19 +16,19 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
             {
               name: "description",
-              content: "Web Developer Portfolio for Jared Gebel"
+              content: "Web Developer Portfolio for Jared Gebel",
             },
             {
               name: "keywords",
-              content: "web, software, development, javascript, developer"
-            }
+              content: "web, software, development, javascript, developer",
+            },
           ]}
         >
           <html lang="en" />
@@ -69,7 +69,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

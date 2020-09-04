@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Heading, Icon, Link, Text } from "@chakra-ui/core";
+import { Flex, Heading, Icon, Link, Text, PseudoBox } from "@chakra-ui/core";
 
 const Contact = () => (
   <Flex
@@ -9,7 +9,7 @@ const Contact = () => (
     minHeight="65vh"
     py={8}
     px={[4, 10, 10, 10]}
-    backgroundColor="#165D94"
+    backgroundColor="blue.700"
     color="whitesmoke"
   >
     <Heading as="h2">Contact</Heading>
@@ -23,24 +23,38 @@ const Contact = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon focusable name="mail" size={["50px", "65px", "80px", "95px"]} />
+        <PseudoBox
+          as={Icon}
+          focusable
+          name="mail"
+          size={["50px", "65px", "80px", "95px"]}
+          _hover={{ color: "blue.300" }}
+        />
       </Link>
       <Link
         href="https://github.com/jaredjgebel"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon focusable name="github" size={["50px", "65px", "80px", "95px"]} />
+        <PseudoBox
+          as={Icon}
+          focusable
+          name="github"
+          size={["50px", "65px", "80px", "95px"]}
+          _hover={{ color: "blue.300" }}
+        />
       </Link>
       <Link
         href="https://www.linkedin.com/in/jaredjgebel/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon
+        <PseudoBox
+          as={Icon}
           focusable
           name="linkedin"
           size={["50px", "65px", "80px", "95px"]}
+          _hover={{ color: "blue.300" }}
         />
       </Link>
     </Flex>

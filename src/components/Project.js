@@ -1,5 +1,14 @@
 import React from "react";
-import { Box, Flex, Link, List, Text, Heading, Icon } from "@chakra-ui/core";
+import {
+  Box,
+  Flex,
+  Link,
+  List,
+  Text,
+  Heading,
+  Icon,
+  PseudoBox,
+} from "@chakra-ui/core";
 import Demo from "./Demo";
 
 const Project = ({
@@ -35,14 +44,21 @@ const Project = ({
 
     {demo && <Demo demo={demo} screenshot={screenshot} />}
 
-    <Flex justifyContent="center">
+    <Flex justifyContent="center" paddingTop={3}>
       <Link
         href={github}
         target="_blank"
         rel="noopener noreferrer"
         height="50px"
       >
-        <Icon focusable name="github" size="50px" />
+        <PseudoBox
+          as={Icon}
+          focusable
+          name="github"
+          color="gray.700"
+          size="50px"
+          _hover={{ color: "gray.900" }}
+        />
       </Link>
     </Flex>
   </Flex>

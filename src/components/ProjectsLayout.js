@@ -8,7 +8,7 @@ const ProjectsLayout = () => (
     alignItems="center"
     minHeight="100vh"
     p={[4, 10, 10, 10]}
-    backgroundColor="#ADD3F0"
+    backgroundColor="blue.100"
   >
     <Box width={["90%", "90%", "80%", "75%"]}>
       <Heading as="h2" textAlign="center" py={8}>
