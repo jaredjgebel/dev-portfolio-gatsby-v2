@@ -42,14 +42,17 @@
     "subtitle": "A React app to practice questions from the game show Jeopardy!",
     "technologies": [
       { "name": "React", "link": "https://reactjs.org/" },
-      { "name": "Feather Icons", "link": "https://feathericons.com/" }
+      { "name": "Chakra UI", "link": "https://chakra-ui.com/" },
+      { "name": "Next.js", "link": "https://nextjs.org/" },
+      { "name": "Framer Motion", "link": "https://www.framer.com/motion/" }
     ],
     "github": "https://github.com/jaredjgebel/practice-jeopardy",
     "demo": "https://practice-jeopardy.herokuapp.com/",
     "projectHighlights": [
+      "Built twice in Next.js and Create React App frameworks to illustrate differences in React server and client rendering",
       "Implemented component, style, and SVG icon libraries for a clear, consistent, and accessible design",
-      "Used Fetch API to gather information from j-Archive API",
-      "Responsive design for app to be used predictably across devices"
+      "Data served to application through NoSQL database or statically rendered via filesystem",
+      "Utilized libraries that handle animation, routing, and state management"
     ]
   },
   {
