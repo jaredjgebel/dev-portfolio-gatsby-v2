@@ -34,7 +34,7 @@ function Hero() {
           fontSize={["20px", "24px", "28px", "32px"]}
           paddingBottom="5px"
         >
-          JavaScript • Node.js • React
+          JavaScript • React • Node.js
         </Heading>
         <Heading
           as="h3"

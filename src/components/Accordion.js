@@ -41,7 +41,7 @@ export default function AccordionContainer({ edges }) {
 
           <AccordionPanel>
             <Project
-              text={edge.node.article}
+              text={edge.node.subtitle}
               technologies={edge.node.technologies}
               github={edge.node.github}
               demo={edge.node.demo}

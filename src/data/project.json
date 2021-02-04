@@ -1,7 +1,60 @@
 [
   {
+    "title": "YouTube Scrapbook",
+    "subtitle": "An application to view, save, and categorize YouTube videos. Includes note-taking feature.",
+    "technologies": [
+      {
+        "name": "React",
+        "link": "https://reactjs.org/"
+      },
+      {
+        "name": "MongoDB",
+        "link": "https://www.mongodb.com/"
+      },
+      {
+        "name": "Mongoose.js",
+        "link": "https://mongoosejs.com/"
+      },
+      {
+        "name": "Auth0",
+        "link": "https://auth0.com/"
+      },
+      {
+        "name": "React Query",
+        "link": "https://react-query.tanstack.com/"
+      },
+      {
+        "name": "Express",
+        "link": "https://expressjs.com/"
+      }
+    ],
+    "github": "https://github.com/jaredjgebel/youtube-scrapbook",
+    "projectHighlights": [
+      "Built Express API to serve data for application, including middleware to identify users and handle errors",
+      "Tested endpoints and Mongoose integration regarding create, read, update, and delete methods",
+      "Utilized Auth0 SDK to add user authentication to both front and back end",
+      "Integrated third-party components with own component system to structure application and apply consistent styles"
+    ]
+  },
+
+  {
+    "title": "Practice Jeopardy!",
+    "subtitle": "A React app to practice questions from the game show Jeopardy!",
+    "technologies": [
+      { "name": "React", "link": "https://reactjs.org/" },
+      { "name": "Feather Icons", "link": "https://feathericons.com/" }
+    ],
+    "github": "https://github.com/jaredjgebel/practice-jeopardy",
+    "demo": "https://practice-jeopardy.herokuapp.com/",
+    "projectHighlights": [
+      "Implemented component, style, and SVG icon libraries for a clear, consistent, and accessible design",
+      "Used Fetch API to gather information from j-Archive API",
+      "Responsive design for app to be used predictably across devices"
+    ]
+  },
+  {
     "title": "'Djello' Project Management",
-    "article": "Task manager for teams. Allows for assignment of team members to tasks, groups similar tasks together into boards and lists, and automatically tracks the history of each task.",
+    "subtitle": "Task manager for teams. Allows for assignment of team members to tasks, groups similar tasks together into boards and lists, and automatically tracks the history of each task.",
     "technologies": [
       { "name": "PostgreSQL", "link": "https://www.postgresql.org/" },
       {
@@ -28,23 +81,8 @@
     ]
   },
   {
-    "title": "Practice Jeopardy!",
-    "article": "A React app to practice questions from the game show Jeopardy!",
-    "technologies": [
-      { "name": "React", "link": "https://reactjs.org/" },
-      { "name": "Feather Icons", "link": "https://feathericons.com/" }
-    ],
-    "github": "https://github.com/jaredjgebel/practice-jeopardy",
-    "demo": "https://practice-jeopardy.herokuapp.com/",
-    "projectHighlights": [
-      "Implemented component, style, and SVG icon libraries for a clear, consistent, and accessible design",
-      "Used Fetch API to gather information from j-Archive API",
-      "Responsive design for app to be used predictably across devices"
-    ]
-  },
-  {
     "title": "Art Slide Puzzles",
-    "article": "A slide puzzle application, using React to display puzzle pieces as a given set of UI state.",
+    "subtitle": "A slide puzzle application, using React to display puzzle pieces as a given set of UI state.",
     "technologies": [
       { "name": "React", "link": "https://reactjs.org/" },
       { "name": "Lodash", "link": "https://lodash.com/" },
@@ -60,7 +98,7 @@
   },
   {
     "title": "Find Your Representative",
-    "article": "Allows a user to find information about their Congressional representatives by inputting their address. Includes contact information, social media, and recent vote history.",
+    "subtitle": "Allows a user to find information about their Congressional representatives by inputting their address. Includes contact information, social media, and recent vote history.",
     "technologies": [
       {
         "name": "Express",

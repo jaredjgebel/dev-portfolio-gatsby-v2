@@ -6,14 +6,16 @@ const Contact = () => (
     direction="column"
     alignItems="center"
     justifyContent="space-around"
-    minHeight="65vh"
+    minHeight="75vh"
     py={8}
     px={[4, 10, 10, 10]}
-    backgroundColor="blue.700"
+    backgroundColor="green.800"
     color="whitesmoke"
   >
-    <Heading as="h2">Contact</Heading>
-    <Text textAlign="center" width="60%" fontSize="xl">
+    <Heading as="h2" paddingBottom={4}>
+      Contact
+    </Heading>
+    <Text textAlign="center" width="60%" fontSize="xl" paddingBottom={4}>
       I'm available for hire, and I'd love to speak with you about your web
       development needs.
     </Text>
@@ -28,7 +30,7 @@ const Contact = () => (
           focusable
           name="mail"
           size={["50px", "65px", "80px", "95px"]}
-          _hover={{ color: "blue.300" }}
+          _hover={{ color: "green.100" }}
         />
       </Link>
       <Link
@@ -41,7 +43,7 @@ const Contact = () => (
           focusable
           name="github"
           size={["50px", "65px", "80px", "95px"]}
-          _hover={{ color: "blue.300" }}
+          _hover={{ color: "green.100" }}
         />
       </Link>
       <Link
@@ -54,7 +56,7 @@ const Contact = () => (
           focusable
           name="linkedin"
           size={["50px", "65px", "80px", "95px"]}
-          _hover={{ color: "blue.300" }}
+          _hover={{ color: "green.100" }}
         />
       </Link>
     </Flex>

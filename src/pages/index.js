@@ -3,7 +3,7 @@ import { Box } from "@chakra-ui/core";
 import Layout from "../components/layout";
 import Hero from "../components/Hero";
 import ProjectsLayout from "../components/ProjectsLayout";
-import Contact from "../components/Contact";
+import Contact from "../components/contact/Contact";
 import topography from "../images/svg/topography.svg";
 import Footer from "../components/Footer";
 

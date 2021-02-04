@@ -35,7 +35,7 @@ const Project = ({
         Technologies
       </Heading>
       {technologies.map((technology, i) => (
-        <Link key={i}>
+        <Link key={i} href={technology.link} isExternal>
           {technology.name}
           {i === technologies.length - 1 ? "" : ", "}
         </Link>

@@ -1,6 +1,6 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
-import AccordionContainer from "./Accordion";
+import Accordion from "./Accordion";
 
 const ProjectsQuery = () => (
   <StaticQuery
@@ -11,7 +11,7 @@ const ProjectsQuery = () => (
             node {
               id
               title
-              article
+              subtitle
               technologies {
                 name
                 link
@@ -24,7 +24,7 @@ const ProjectsQuery = () => (
         }
       }
     `}
-    render={data => <AccordionContainer edges={data.allProjectJson.edges} />}
+    render={(data) => <Accordion edges={data.allProjectJson.edges} />}
   />
 );
 
